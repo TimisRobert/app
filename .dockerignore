@@ -1,0 +1,9 @@
+node_modules
+.direnv
+.build
+.vscode
+.sst
+.git
+.open-next
+.DS_Store
+.env*.local

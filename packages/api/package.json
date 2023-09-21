@@ -1,0 +1,23 @@
+{
+  "name": "@app/api",
+  "version": "0.0.0",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsx watch --clear-screen=false src/main.ts",
+    "build": "node build.mjs",
+    "test": "sst bind vitest",
+    "typecheck": "tsc -noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "^20.6.1",
+    "esbuild": "^0.19.3",
+    "sst": "^2.25.1",
+    "tsx": "^3.12.10",
+    "vitest": "^0.34.4"
+  },
+  "dependencies": {
+    "@fastify/type-provider-typebox": "^3.5.0",
+    "fastify": "^4.23.2"
+  }
+}

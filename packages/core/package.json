@@ -1,0 +1,24 @@
+{
+  "name": "@app/core",
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "test": "sst bind vitest",
+    "typecheck": "tsc -noEmit",
+    "generate": "drizzle-kit generate:pg",
+    "migrate": "drizzle-kit push:pg"
+  },
+  "devDependencies": {
+    "@types/node": "^20.6.1",
+    "drizzle-kit": "^0.19.13",
+    "sst": "^2.25.1",
+    "vitest": "^0.34.4"
+  },
+  "dependencies": {
+    "@sinclair/typebox": "^0.31.15",
+    "drizzle-orm": "^0.28.6",
+    "drizzle-typebox": "^0.1.1",
+    "postgres": "^3.3.5",
+    "zod": "^3.22.2"
+  }
+}
